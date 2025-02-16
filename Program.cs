@@ -16,9 +16,9 @@ namespace PortfolioCategorization
             try
             {
                 var culture = CultureInfo.InvariantCulture;
-                Console.WriteLine("-----------------------------------------------");
+                Console.WriteLine("---------------------------------------------");
                 Console.WriteLine("Categorização das Operações do Portifólio");
-                Console.WriteLine("-----------------------------------------------");
+                Console.WriteLine("---------------------------------------------");
                 Console.WriteLine("Digite a data de referência (MM/dd/yyyy):");
                 DateTime referenceDate = DateTime.ParseExact(Console.ReadLine(), "MM/dd/yyyy", culture);
 
@@ -52,9 +52,9 @@ namespace PortfolioCategorization
 
                 PortfolioCategorizer categorizer = new();
                 Console.WriteLine("");
-                Console.WriteLine("-----------------------------------------------");
+                Console.WriteLine("---------------------------------------------");
                 Console.WriteLine("Categorias das operações:");
-                Console.WriteLine("-----------------------------------------------");
+                Console.WriteLine("---------------------------------------------");
                 foreach (var trade in trades)
                 {
                     Console.WriteLine(categorizer.CategorizeTrade(trade, referenceDate));
@@ -68,9 +68,4 @@ namespace PortfolioCategorization
             }
         }
     }
-
-
-
-
-
 }

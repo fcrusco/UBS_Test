@@ -1,7 +1,5 @@
 ﻿using PortfolioCategorization.Models;
 using PortfolioCategorization.Rules;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace PortfolioCategorization.Services
 {
